@@ -23,9 +23,10 @@ A simple web application for students to submit their admission details. Built u
    npm install express body-parser
    node server.js
    ```
-2.You can view it in browser
+2.**You can view it in browser**
    ```bash
    http://localhost:3000
+```
 
    
 
