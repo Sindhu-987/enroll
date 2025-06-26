@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* style.css */
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+    .container {
+    background: #fff;
+    padding: 30px 25px;
+    border: 2px solid rgb(74, 74, 253);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    }
+
+    h2 {
+    margin-bottom: 20px;
+    color: #333;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    input, select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    }
+
+    input:focus, select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    }
+
+    button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    button:hover {
+    background: #357ab8;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>College Admission Form</h2>
+    <form action="/admission" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <select name="course" required>
+        <option value="">Select a Course</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="B.Sc">B.Sc</option>
+        <option value="B.Com">B.Com</option>
+        <option value="BA">BA</option>
+      </select>
+      <button type="submit">Apply Now</button>
+    </form>
+  </div>
+</body>
+</html>
