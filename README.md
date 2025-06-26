@@ -14,8 +14,6 @@ A simple web application for students to submit their admission details. Built u
 
 ## 🛠️ How to Run Locally
 
-### Option 1: Frontend Only (Static Site)
-
 1. **Clone the repository , install dependencies and run the backend**
    ```bash
    git clone https://github.com/Sindhu-987/enroll.git
